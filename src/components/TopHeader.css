@@ -1,0 +1,41 @@
+
+.top-header{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-bottom: 2px solid whitesmoke;
+
+    font-family: 'Inria Serif', serif;
+}
+
+.top-header p{
+    color: rgb(51,51,51);
+    font-size: 1.55em;
+
+    margin: 0.4em 1.3em;
+}
+
+.link-container{
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+    flex-grow: 1;
+
+    font-family: 'JetBrains Mono', monospace;;
+}
+
+.link-container p{
+    font-size: 1em;
+    border: 2px solid rgb(51,51,51);
+    border-radius: 100px;
+
+    padding: 0.3em 0.8em;
+}
+
+.link-container p:hover{
+    background-color: rgb(51,51,51);
+    color: whitesmoke;
+
+    transition: 500ms;
+}
+

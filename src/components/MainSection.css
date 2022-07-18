@@ -1,0 +1,9 @@
+
+.graph-interactive-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: white;
+
+    padding: 2.3em;
+}
