@@ -138,6 +138,7 @@ const MainSection = () => {
 //             }
 //         }
         setDailyPollId(dailyPoll.docs[0].data()["poll_id"]);
+        console.log("set");
         setAllPollData(pollData.docs.map((doc) => ({...doc.data(), id: doc.id})));
     }
 
