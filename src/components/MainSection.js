@@ -150,6 +150,7 @@ const MainSection = () => {
 		const pollData = await getDocs(pollsRef);
 		const dailyPoll = await getDocs(dailyPollsRef);
 
+<<<<<<< HEAD
 		for (const doc of dailyPoll.docs) {
 			setDailyPollId(doc.data()["poll_id"]);
 		}
@@ -157,6 +158,13 @@ const MainSection = () => {
 			pollData.docs.map((doc) => ({ ...doc.data(), id: doc.id }))
 		);
 	};
+=======
+        for(const doc of dailyPoll.docs){
+            setDailyPollId(doc.data()["poll_id"]);
+        }
+        setAllPollData(pollData.docs.map((doc) => ({...doc.data(), id: doc.id})));
+    }
+>>>>>>> 6c45be6a58aa5eba912a62454c2e2c73f401dd72
 
 	return (
 		<div className="graph-interactive-wrapper">
@@ -183,6 +191,7 @@ const MainSection = () => {
 export default MainSection;
 
 function getCookie(cname) {
+<<<<<<< HEAD
 	let name = cname + "=";
 	let decodedCookie = decodeURIComponent(document.cookie);
 	let ca = decodedCookie.split(";");
@@ -196,4 +205,19 @@ function getCookie(cname) {
 		}
 	}
 	return "";
+=======
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for(let i = 0; i <ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) === ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) === 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+>>>>>>> 6c45be6a58aa5eba912a62454c2e2c73f401dd72
 }
