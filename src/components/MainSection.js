@@ -130,16 +130,9 @@ const MainSection = () => {
         const pollData = await getDocs(pollsRef);
         const dailyPoll = await getDocs(dailyPollsRef);
 
-//         for(const doc of dailyPoll.docs){
-//             const timeStamp = doc.data()['publishedDate'].seconds*1000;
-//             const todaysMidnight = new Date().setHours(0,0,0,0);
-//             if(timeStamp === todaysMidnight){
-//                 setDailyPollId(doc.data()["poll_id"]);
-//             }
-//         }
-        consol.log("get");
-        setDailyPollId(dailyPoll.docs[0].data()["poll_id"]);
-        console.log("set");
+        for(const doc of dailyPoll.docs){
+            setDailyPollId(doc.data()["poll_id"]);
+        }
         setAllPollData(pollData.docs.map((doc) => ({...doc.data(), id: doc.id})));
     }
 
