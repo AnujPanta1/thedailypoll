@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/thedailypoll/static/css/main.6262a8c0.css",
-    "main.js": "/thedailypoll/static/js/main.2f965575.js",
+    "main.js": "/thedailypoll/static/js/main.35c3aa2a.js",
     "static/js/787.650c09ab.chunk.js": "/thedailypoll/static/js/787.650c09ab.chunk.js",
     "index.html": "/thedailypoll/index.html",
     "main.6262a8c0.css.map": "/thedailypoll/static/css/main.6262a8c0.css.map",
-    "main.2f965575.js.map": "/thedailypoll/static/js/main.2f965575.js.map",
+    "main.35c3aa2a.js.map": "/thedailypoll/static/js/main.35c3aa2a.js.map",
     "787.650c09ab.chunk.js.map": "/thedailypoll/static/js/787.650c09ab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6262a8c0.css",
-    "static/js/main.2f965575.js"
+    "static/js/main.35c3aa2a.js"
   ]
 }
